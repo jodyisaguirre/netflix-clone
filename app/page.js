@@ -1,5 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import Navbar from './components/Navbar'
+import DetailCard from './components/DetailCard'
 
 export default async function Home() {
   const res = await fetch('http://www.omdbapi.com/?t=john+wick&apikey=45388f10')
@@ -7,10 +9,9 @@ export default async function Home() {
  
   return (
       <>
-           <h1>Movies</h1>
-           <ul>
-              {movies.Title}
-           </ul>
+        <Navbar/>
+        <DetailCard title={movies.Title} image={movies.Poster}/>
+        
 
       </>
   )
