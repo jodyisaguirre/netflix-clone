@@ -3,21 +3,20 @@ import React from 'react';
 import { useRouter } from 'next/navigation'
 import styles from './Navbar.module.scss';
  
-
-const HomeButton = () => {
+const NavButton = () => {
   const router = useRouter()
 
   function handleRoute(){
-    router.push(`/`);
+    router.push('/');
   }
 
   return (
     <div >
-        <button onClick={handleRoute}>        
+        <button aria-label='More Info' onClick={handleRoute}>        
             <img className={styles.netflixLogo}src='/netflix.png'/>
         </button>
     </div>
   );
 };
 
-export default HomeButton;
+export default NavButton;

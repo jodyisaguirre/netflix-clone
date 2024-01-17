@@ -1,4 +1,4 @@
-import Navbar from "@/app/components/Navbar";
+import Navbar from '@/app/components/Navbar';
 import styles from './page.module.scss';
 
 const MovieDetail = async ({params}) => {

@@ -2,7 +2,6 @@
 import React from 'react';
 import { useRouter } from 'next/navigation'
 import styles from './MoreInfoButton.module.scss'
- 
 
 const MoreInfoButton = ({id}) => {
   const router = useRouter()

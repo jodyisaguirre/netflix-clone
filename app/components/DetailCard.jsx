@@ -1,4 +1,3 @@
-// DetailCard.js
 import React from 'react';
 import styles from './DetailCard.module.scss';
 import MoreInfoButton from './MoreInfoButton';
