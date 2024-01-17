@@ -19,7 +19,7 @@ export default async function Home() {
       <>
         <Navbar/>
         <div className={styles.movieContainer}>
-       {movies.map((movie) => <DetailCard title={movie.Title} image={movie.Poster} id={movie.imdbID}/>)}
+       {movies.map((movie) => <DetailCard key={movie.imdbID} title={movie.Title} image={movie.Poster} id={movie.imdbID}/>)}
        </div>
       </>
   )

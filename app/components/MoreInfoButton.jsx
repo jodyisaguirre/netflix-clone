@@ -3,7 +3,7 @@ import React from 'react';
 import { useRouter } from 'next/navigation'
 import styles from './MoreInfoButton.module.scss'
 
-const MoreInfoButton = ({id}) => {
+const MoreInfoButton = ({id,title}) => {
   const router = useRouter()
 
   function handleRoute(){
