@@ -7,7 +7,7 @@ const MovieDetail = async ({params}) => {
   const movie = await res1.json()
 
   return (
-    <div>
+    <div aria-label={`Movie Details: ${movie.Title}`} aria-live='polite'>
       <Navbar/>
       <div className={styles.movieContainer}>
         <header>      
