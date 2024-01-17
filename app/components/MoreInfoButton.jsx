@@ -12,7 +12,7 @@ const MoreInfoButton = ({id}) => {
 
   return (
     <div className={styles.buttonContainer}>
-      <button className={styles.button} onClick={handleRoute}><div className={styles.circle}>i</div>More info</button>
+      <button className={styles.button} aria-label={`More info about ${title}`} onClick={handleRoute}><div className={styles.circle}>i</div>More info</button>
     </div>
   );
 };

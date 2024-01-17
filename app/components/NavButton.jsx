@@ -12,7 +12,7 @@ const NavButton = () => {
 
   return (
     <div >
-        <button aria-label='More Info' onClick={handleRoute}>        
+        <button onClick={handleRoute} aria-label='Back to Home'>        
             <img className={styles.netflixLogo}src='/netflix.png'/>
         </button>
     </div>

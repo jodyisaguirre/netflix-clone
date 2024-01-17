@@ -10,7 +10,7 @@ const DetailCard = ({ title, image,id }) => {
       <div className={styles.cardContent}>
         <h2 className={styles.cardTitle}>{title}</h2>
       </div>
-      <MoreInfoButton id={id}/>
+      <MoreInfoButton id={id} title={title}/>
     </div>
   );
 };
